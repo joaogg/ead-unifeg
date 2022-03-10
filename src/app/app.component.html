@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>EAD Unifeg</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+    <span *ngIf="loggedRoute;else loggedOut">
+        <app-panel-logged></app-panel-logged>
+    </span>
+    
+    <ng-template #loggedOut>
+        <app-panel-logged-out></app-panel-logged-out>
+    </ng-template>
+
+</html> 

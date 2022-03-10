@@ -1,0 +1,114 @@
+body {
+    background: url(src/assets/images/layout/bg.jpg) no-repeat center center fixed;
+}
+
+.banner-sec {
+    background-size: cover;
+    min-height     : 500px;
+    border-radius  : 0 10px 10px 0;
+    padding        : 0;
+}
+
+.container {
+    border-radius  : 10px;
+    box-shadow     : 15px 20px 0px rgba(0, 0, 0, 0.1);
+    display        : flex;
+    margin-top     : 5%;
+    flex-direction : row;
+    justify-content: center;
+    align-items    : center;
+}
+
+.carousel-inner {
+    border-radius: 0 10px 10px 0;
+}
+
+.carousel-caption {
+    text-align: left;
+    left      : 5%;
+}
+
+.login-sec {
+    background-color: #FFF;
+    padding         : 50px 30px;
+    position        : relative;
+}
+
+.banner-text {
+    width        : 100%;
+    position     : absolute;
+    bottom       : 40px;
+    border-radius: 15px;
+    padding      : 2%;
+    background   : #00000073;
+}
+
+@media(max-width: 1000px) {
+    .banner-text {
+        visibility: hidden;
+    }
+
+    .banner-sec {
+        visibility: hidden;
+    }
+}
+
+.login-sec .copy-text {
+    position  : absolute;
+    width     : 40%;
+    bottom    : 20px;
+    font-size : 13px;
+    text-align: center;
+}
+
+.login-sec .copy-text i {
+    color: #0083fc;
+}
+
+.login-sec .copy-text a {
+    color: #E36262;
+}
+
+.login-sec h2 {
+    margin-bottom: 30px;
+    font-weight  : 800;
+    font-size    : 30px;
+    color        : #0083fc;
+}
+
+.login-sec h2:after {
+    content      : " ";
+    width        : 100px;
+    height       : 5px;
+    background   : #0083fc;
+    display      : block;
+    margin-top   : 20px;
+    border-radius: 3px;
+    margin-left  : auto;
+    margin-right : auto
+}
+
+.btn-login {
+    background : #DE6262;
+    color      : #fff;
+    font-weight: 600;
+}
+
+.banner-text h2 {
+    color      : #fff;
+    font-weight: 600;
+}
+
+.banner-text h2:after {
+    content      : " ";
+    width        : 100px;
+    height       : 5px;
+    background   : #FFF;
+    display      : block;
+    margin-top   : 20px;
+    border-radius: 3px;
+}
+
+.banner-text p {
+    color: #fff;
+}

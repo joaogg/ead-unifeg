@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/eurocopa",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

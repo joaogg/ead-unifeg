@@ -1,0 +1,68 @@
+<div class="container  align-items-center justify-content-center">
+    <div class="row">
+        <div class="col-md-12 col-lg-4 login-sec">
+            <div class="row">
+                <div class="col-md-12 mb-4 text-center">
+                    <img src="assets/images/layout/logo-unifeg-ead.png">
+                </div>
+                <div class="col-md-12 mt-4">
+                    <div class="form-group"> 
+                        <label for="exampleInputEmail1" class="text-uppercase">
+                            <b><i class="fa fa-user"></i> RA (Registro Acadêmico)</b>
+                        </label>
+                        <input type="text" class="form-control" placeholder="RA (Registro Acadêmico)" id="ra" [(ngModel)]="loginObj.username" required>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="exampleInputPassword1" class="text-uppercase">
+                            <b><i class="fas fa-key"></i> Senha</b>
+                        </label>
+                        <input type="password" class="form-control" placeholder="Senha" id="password" [(ngModel)]="loginObj.password" required>
+                    </div>
+                </div>
+                <div class="col-md-12 text-right">
+                    <button type="button" class="btn btn-primary" id="login" (click)="login()">
+                        <i class="fas fa-sign-in"></i> Acessar
+                    </button>
+                </div>
+                <div class="col-md-12 text-center mt-4">
+                    <small><i class="fas fa-info-circle"></i> Esqueceu a senha?</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 banner-sec">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img class="d-block img-fluid"
+                            src="https://www.eusemfronteiras.com.br/wp-content/uploads/2019/12/green-chameleon-s9CC2SKySJM-unsplash-1-1024x683.jpg"
+                            alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="banner-text">
+                                <h2>EAD Unifeg!</h2>
+                                <p>Estude pelo computador, pelo celular e até pela sua Smart TV!<br>Aulas
+                                    transformadoras com profissionais renomados!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid"
+                            src="https://sonhoastral.com/uploads/content/image/180579/Design_sem_nome__4_.jpg"
+                            alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="banner-text">
+                                <h2>Volta as aulas Unifeg!</h2>
+                                <p>Encontre suas novas oportunidades em 2022!<br>Dê o próximo passo em sua carreira!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
