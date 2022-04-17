@@ -33,7 +33,6 @@ export class LoginComponent implements OnInit {
   }
 
   login(): void {
-    console.log('this.loginObj = ', this.loginObj);
     this.authService.authLogin(this.loginObj);
   }
 

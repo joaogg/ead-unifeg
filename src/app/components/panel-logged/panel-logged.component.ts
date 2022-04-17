@@ -9,7 +9,7 @@ declare var $: any;
 })
 export class PanelLoggedComponent implements OnInit {
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
     $('#sidebar').toggleClass('active');

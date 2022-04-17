@@ -17,14 +17,10 @@ export class AuthService {
   ) {}
 
   authLogin(loginObj) {
-    console.log(' >> ', localStorage.getItem('auth_ead_unifeg')); 
-
     const btn = $('#login');
     btn.html('<i class="fa fa-spinner fa-spin"></i> Acessando...');
 
     this.apiService.authLogin(loginObj).subscribe((res) => {
-
-      console.log('res = ', res);
 
       localStorage.setItem('authToken', res['result'][0]['token']);
       localStorage.setItem('expirationToken', res['result'][0]['expiration']);
